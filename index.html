@@ -3,40 +3,84 @@
 <head>
 	<meta charset="utf-8">
 	<title>nave.js</title>
-  <style>
-  body {
-	font-family: sans-serif;
-	font-size: 200%;
-	color: white;
-	background-color: darkslategrey;
-	text-align: center;
-}
-#nave {
-	background-color: grey;
-}
-#nave a {
-	background-color: grey;
-	color: lightgrey;
-	transition-duration: 0.4s;
-}
-#nave a:hover {
-	background-color: white;
-	color: black;
-}
-  </style>
+	<link rel="stylesheet" type="text/css" href="nave.css">
 </head>
 <body>
 <h1>nave.js</h1>
 	<div id='nave'>
-	<a href="#">Home</a>
-	<a href="#">How-to</a>
-	<a href="#">Installation</a>
-	</div><br><br>
-Powerful and easy to use navbar for websites.<br>
-
-<script type="text/javascript" src='nave.js'></script>
+    <a href='#'>Nave.js</a><a href="#ft">Main Features</a><a href="#gs">Getting started</a><a href="#ad">Advanced</a><a href="#fa">About</a><span class="naver">by Piccirillo</span>
+	</div>
+    Powerful and easy to use navbar for websites.<br><br><br>
+    <a id="ft" style="opacity: 0;">a</a>
+    <hr>
+    <h2>Main features</h2><br>
+    <h3>&bull;Sticky&bull;</h3><br>
+    It sticks to the top of the page when the user scrolls down. This can be easilt achieved by using <i>position: sticky;</i>
+    However, this only works on firefox, for now. <em>Nave.js</em> provides a cross-browser sticky navbar, like the one you can see in this page.<br><br>
+    <h3>&bull;Dynamic&bull;</h3><br>
+    Some websites contain only one page, like this one. With <em>Nave.js</em>, the nav link to the section you are becomes active;<br><br>
+    <h3>&bull;Easy to use&bull;</h3><br>
+    Just follow the simple steps below to start using <em>Nave.js</em>.
+    
+    
+    <br><a id="gs" style="opacity: 0;">a</a><hr>
+    <h2>Getting Started</h2><br>
+    <b><u>1st step:</u></b><br>
+    Add the folowing to the bottom of your page's body:<br>
+    <code id='local'>a
+    </code><br><br>
+    <b><u>2nd step:</u></b><br>
+    Add a DIV element anywhere in your page, with the id "nave". put some A and SPAN elements inside.<br><br>
+    <b><u>3rd step:</u></b><br>
+    Add a configuration script, like this (&darr;), before the 1st step's script:<br>
+    <code>
+        &lt;script type="text/javascript"&gt;<br>
+        naveSize = 48; //Navbar's height<br>
+        naveType = 'sticky'; //Navbar's configurations (details on the 'advanced' section)<br>
+        naveLinks = ['downloads','about','help']; //Single page links (idem &uarr;)<br>
+        naveActive = 'background-color: tomato;'; //CSS of the active navigation link<br>
+        &lt;/script&gt;
+    </code><br><br>
+    Then your navbar is ready. More details about the settings below.
+    
+    <br><a id="ad" style="opacity: 0;">a</a><hr>
+    <h2>Advanced</h2><br>
+    With the 4th step's configuration script, you can customize your navbar. You can also change the style with css.<br><br><br>
+    <b>naveSize</b><br> Controls the navbar's height, in pixels. Must be a number (default: 48);<br><br>
+    <b>naveType</b><br> Activates some of the navbar's functions. Must be either 'sp' (for single paged websites), 'sticky' (for a navbar that sticks to the top of the screen when scrolled past), or both (e.g. 'sp sticky') (default: 'sticky');<br><br>
+    <b>naveLinks</b><br> A list of the links for single-page websites. The list may contain the anchors, in order. The first element of the list is the second link, as anything above it will activate the first. Must be an array, for example <i>['main_features', 'getting_started', 'advanced']</i>. the page may contain the anchors "main_features", "getting_started" and "advanced", in his exact order;<br><br>
+    <b>naveActive</b><br> Contains the CSS style of the active links, for single-paged websites. For example:<br>
+    <code>'background-color: #8dafaf; color: black;'</code><br><br>
+    <b>*keep in mind that all variable names and values are case-sensective*</b>
+    
+    <br><a id="fa" style="opacity: 0;">a</a><hr>
+    <h2>About</h2><br>
+    <h3>To-do list:</h3>
+    <li>Responsive navbars, for smaller screens (e.g. smartphones);</li>
+    <li>Vertical navbars;</li>
+    <li>Side menus;</li>
+    <br>
+    You don't need to download the file, but if you want to, click <a href="nave.js" download>here</a>.<br>
+    Don't forget to check this webpage for info about any update.<br>An update log will be avaliable after the first update.<br>Credits aren't necessary, but are apreciated.
+    
+    <footer>
+    <hr>
+    Page and silly script created by <i>Diogo "Piccirillo" Silva</i><br>
+    Contact and troubleshooting: <a href='mailto:diogo@piccirillo.pe.hu'>diogo@piccirillo.pe.hu</a>
+    </footer>
+    
 <script type="text/javascript">
-	naveHeight = 48;
+naveSize = 48;
+naveType = 'sp sticky';
+naveLinks = ['ft','gs','ad','fa'];
+naveActive = 'background-color: #8dafaf; color: black;';
 </script>
+    
+<script type="text/javascript">
+document.getElementById('local').innerHTML = '&lt;script type="text/javascript" src="'+ window.location.href .slice(0,window.location.href.indexOf('index.html')) +'nave.js"&gt;&lt;/script>'
+</script>
+    
+<script type="text/javascript" src='nave.js'></script>
+
 </body>
 </html>
