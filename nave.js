@@ -10,6 +10,6 @@ css.appendChild(style);
 document.head.appendChild(css);
 function update() { var Scrl = document.documentElement.scrollTop || document.body.scrollTop, nave = document.getElementById('nave');
 if (naveType.indexOf('sticky') >= 0) { if (Scrl < offset) { nave.className = nave.className.replace('stk007','n0s64t'); } else { nave.className = nave.className.replace('n0s64t','stk007'); }}
-if (naveType.indexOf('sp') >= 0) { var i = 0; if (Scrl < (document.getElementById(naveLinks[0]).getBoundingClientRect().top + Scrl)/* - 8*/) { nave.children[0].style =naveActive; } else { nave.children[0].style = ''; }
-while (i < naveLinks.length) { var e = document.getElementById(naveLinks[i]).getBoundingClientRect(); if (Scrl > (e.top + Scrl)/*-8*/) { nave.children[ i+1 ].style =naveActive; for (var x=i; x>-1; x--) { nave.children[ x ].style = ''; } } else { nave.children[ i+1 ].style = ''; } i += 1; } } requestAnimationFrame(update); }
+if (naveType.indexOf('sp') >= 0) { var i = 0; if (Scrl < (document.getElementById(naveLinks[0]).getBoundingClientRect().top + Scrl) - 8) { nave.children[0].style =naveActive; } else { nave.children[0].style = ''; }
+while (i < naveLinks.length) { var e = document.getElementById(naveLinks[i]).getBoundingClientRect(); if (Scrl > (e.top + Scrl)-8) { nave.children[ i+1 ].style =naveActive; for (var x=i; x>-1; x--) { nave.children[ x ].style = ''; } } else { nave.children[ i+1 ].style = ''; } i += 1; } } requestAnimationFrame(update); }
 window.addEventListener("load", function() { update(); }, false); 
