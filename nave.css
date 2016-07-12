@@ -54,11 +54,6 @@ a {
     text-align: center;
     padding: 48px 0px 256px 0px;
 }
-@media screen and (min-width: 1147px) {
-    .box:not(.last) {
-        margin: 48px 25% 48px 25%;
-    }
-}
 @media screen and (max-width: 1147px) {
     #nave a:nth-child(1) {
         display: none;
@@ -66,10 +61,10 @@ a {
     #nave a:last-child {
         display: none;
     }
-    .box:not(.last) {
-        margin: 48px 10% 48px 10%;
-    }
 }
 .last {
     margin: -8px;
+}
+.box:not(.last) {
+    margin: 48px 25% 48px 25%;
 }
