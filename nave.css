@@ -49,7 +49,7 @@ h2 {
     }
 }
 @media screen and (max-width: 1147px) {
-    * {
+    .box {
         font-size: 200%;
     }
 }
