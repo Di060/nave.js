@@ -1,0 +1,126 @@
+body {
+	font-family: sans-serif;
+	text-align: center;
+    margin: 0px;
+    min-height: 1200px;
+    color: white;
+    margin-top: 230px;
+	background-color: white;
+    font-weight: 200;
+}
+code {
+    font-family: monospace;
+    background-color: darkgrey;
+    color: white;
+    text-align: left;
+    display: inline-block;
+/*    border-radius: 4px;*/
+}
+h1 {
+    font-size: 72px;
+}
+h2 {
+    background-color: #fc0;
+    color: white;
+    display: inline-block;
+    padding: 16px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    margin-bottom: 32px;
+}
+.barkim {
+    height: 128px;
+    margin: 48px 48px 0px 48px;
+}
+.cont {
+    position: relative;
+    top: 12px;
+}
+@media screen and (min-width: 1147px) {
+    .esq {
+        float: left;
+    }
+    .dir {
+        float: right;
+    }
+}
+@media screen and (max-width: 1147px) {
+    .box {
+        font-size: 200%;
+    }
+}
+a {
+    color: orange;
+}
+a:hover {
+    color: chocolate;
+}
+.box {
+    color: black;
+    background-color: white;
+    display: block;
+/*    padding: 24px 48px 64px 48px;*/
+    font-size: 16px;
+    line-height: 24px;
+}
+.box:not(.blk) {
+    margin: 32px 15%;
+}
+.brk {
+    clear: both;
+}
+.blk {
+    background-color: dimgray;
+    margin: none;
+    color: white;
+    padding-bottom: 32px;
+}
+.last {
+    margin-top: 128px;
+    padding-bottom: 256px;
+}
+.pic {
+/*    margin: 48px;*/
+    width: 500px;
+}
+.titulo {
+	background-color: #3c5858;
+    margin: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+/*    padding-top: 48px;*/
+}
+#nave {
+	background-color: darkslategray;
+    z-index: 100;
+    text-align: left;
+}
+#nave a {
+	background-color: darkslategray;
+	color: lightgrey;
+    font-weight: bold;
+    float: none;
+}
+#nave a:first-child {
+    margin-left: 48px;
+}
+#nave a:hover {
+    background-color: #ffeb7d;
+    color: grey;
+}
+.ancora {
+    opacity: 0;
+    position: relative;
+    top: -24px;
+    display: block;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #304949;
+}
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #4f6f6f;
+}

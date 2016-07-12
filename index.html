@@ -103,10 +103,15 @@
         naveSize = 48;
         naveType = 'sp sticky';
         naveLinks = ['ft','gs','ad','fa'];
-        naveActive = 'background-color: #fff3b2; color: black;';
+        naveActive = 'background-color: #e0c000; color: white;';
         naveWidth = 0;
     </script>
     <script type="text/javascript" src='nave.js'></script>
+    <script>
+    for (var i=0; i<document.getElementById('nave').children.length; i++) {
+        document.getElementById('nave').children[i].style='transition-duration: 0.2s;'; 
+    }
+    </script>
 
 </body>
 </html>

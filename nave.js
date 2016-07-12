@@ -24,7 +24,7 @@ var estilo = '#nave { width: 100%; display: block; left: 0; overflow: hidden; } 
 var css = document.createElement("STYLE"),
     style = document.createTextNode(estilo);
 css.appendChild(style);
-document.head.appendChild(css);
+document.head.insertBefore(css,document.head.firstChild);
 function update() {
     var Scrl = document.documentElement.scrollTop || document.body.scrollTop,
         nave = document.getElementById('nave');
