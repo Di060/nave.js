@@ -5,11 +5,13 @@ body {
     min-height: 1200px;
     color: white;
     margin-top: 230px;
-	background-color: #917b00;
+	background-color: white;
+/*
     background: url(img/bg.png);
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
+*/
 }
 code {
     font-family: monospace;
@@ -36,7 +38,7 @@ h2 {
 }
 .cont {
     position: relative;
-    top: 200px;
+    top: 96px;
 }
 @media screen and (min-width: 1147px) {
     .esq {
@@ -44,6 +46,11 @@ h2 {
     }
     .dir {
         float: right;
+    }
+}
+@media screen and (max-width: 1147px) {
+    * {
+        font-size: 200%;
     }
 }
 a {
@@ -55,24 +62,16 @@ a:hover {
 .box {
     color: black;
     background-color: white;
-    width: 70%;
-/*    min-height: 480px;*/
-    display: inline-block;
-    padding: 24px 48px 64px 48px;
+    display: block;
+/*    padding: 24px 48px 64px 48px;*/
     font-size: 16px;
-/*    border-radius: 16px;*/
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.5), 6px 6px 0px lightgrey, 8px 8px 5px rgba(0,0,0,0.5);
-    margin: 32px 64px;
+    margin: 32px 15%;
     line-height: 24px;
 }
 .brk {
     clear: both;
 }
-.first {
-    width: 640px;
-}
 .last {
-    width: 640px;
     margin-bottom: 256px;
 }
 .pic {
@@ -80,42 +79,29 @@ a:hover {
     width: 500px;
 }
 .titulo {
-	background-color: #ffcc00;
+	background-color: #ec0;
     margin: none;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    height: 380px;
+    height: 200px;
 /*    padding-top: 48px;*/
 }
 #nave {
-	background-color: #ffcc00;
-    border-top: 4px solid #fc0;
-    box-shadow: 0px -4px 0px 0px rgba(0,0,0,0.25) inset, 0px 4px 4px -2px black;
+	background-color: #fd1;
     z-index: 100;
-    text-align: center;
+    text-align: left;
 }
 #nave a {
 	background-color: #ffdd11;
 	color: darkgrey;
     font-weight: bold;
-    box-shadow: 0px -4px 0px 0px rgba(0,0,0,0.25) inset,
-        0px 2px 0px 0px rgba(0,0,0,0.25) inset;
     float: none;
-    text-align: center;
 }
 #nave a:first-child {
-    box-shadow: 0px -4px 0px 0px rgba(0,0,0,0.25) inset,
-        2px 2px 0px 0px rgba(0,0,0,0.25) inset;
+    margin-left: 48px;
 }
-#nave a:last-child {
-/*    border-top-right-radius: 8px;*/
-}
-/*#nave a{
-    border-left: 1px solid rgba(0,0,0,0.25);
-    border-right: 1px solid rgba(0,0,0,0.25);
-}*/
 #nave a:hover {
     background-color: #ffeb7d;
     color: grey;
