@@ -1,5 +1,5 @@
 body {
-    background-color: #eee;
+    background-color: #6f8f8f;
     font-family: sans-serif;
 }
 
@@ -40,13 +40,72 @@ a {
 .box {
     background-color: white;
     color: dimgray;
-    font-weight: 200;
+    font-weight: 100;
     padding: 24px 48px 48px;
     line-height: 24px;
     position: relative;
     top: 256px;
-    box-shadow: 2px 2px 2px #555;
-    border-radius: 18px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px,
+    rgba(0, 0, 0, 0.1) 2px 2px,
+    rgba(0, 0, 0, 0.1) 3px 3px,
+    rgba(0, 0, 0, 0.1) 4px 4px,
+    rgba(0, 0, 0, 0.1) 5px 5px,
+    rgba(0, 0, 0, 0.1) 6px 6px,
+    rgba(0, 0, 0, 0.1) 7px 7px,
+    rgba(0, 0, 0, 0.1) 8px 8px,
+    rgba(0, 0, 0, 0.1) 9px 9px,
+    rgba(0, 0, 0, 0.1) 10px 10px,
+    rgba(0, 0, 0, 0.1) 11px 11px,
+    rgba(0, 0, 0, 0.1) 12px 12px,
+    rgba(0, 0, 0, 0.1) 13px 13px,
+    rgba(0, 0, 0, 0.1) 14px 14px,
+    rgba(0, 0, 0, 0.1) 15px 15px,
+    rgba(0, 0, 0, 0.1) 16px 16px,
+    rgba(0, 0, 0, 0.1) 17px 17px,
+    rgba(0, 0, 0, 0.1) 18px 18px,
+    rgba(0, 0, 0, 0.1) 19px 19px,
+    rgba(0, 0, 0, 0.1) 20px 20px,
+    rgba(0, 0, 0, 0.1) 21px 21px,
+    rgba(0, 0, 0, 0.1) 22px 22px,
+    rgba(0, 0, 0, 0.1) 23px 23px,
+    rgba(0, 0, 0, 0.1) 24px 24px,
+    rgba(0, 0, 0, 0.1) 25px 25px,
+    rgba(0, 0, 0, 0.1) 26px 26px,
+    rgba(0, 0, 0, 0.1) 27px 27px,
+    rgba(0, 0, 0, 0.1) 28px 28px,
+    rgba(0, 0, 0, 0.1) 29px 29px,
+    rgba(0, 0, 0, 0.1) 30px 30px,
+    rgba(0, 0, 0, 0.1) 31px 31px,
+    rgba(0, 0, 0, 0.1) 32px 32px,
+    rgba(0, 0, 0, 0.1) 33px 33px,
+    rgba(0, 0, 0, 0.1) 34px 34px,
+    rgba(0, 0, 0, 0.1) 35px 35px,
+    rgba(0, 0, 0, 0.1) 36px 36px,
+    rgba(0, 0, 0, 0.1) 37px 37px,
+    rgba(0, 0, 0, 0.1) 38px 38px,
+    rgba(0, 0, 0, 0.1) 39px 39px,
+    rgba(0, 0, 0, 0.1) 40px 40px,
+    rgba(0, 0, 0, 0.1) 41px 41px,
+    rgba(0, 0, 0, 0.1) 42px 42px,
+    rgba(0, 0, 0, 0.1) 43px 43px,
+    rgba(0, 0, 0, 0.1) 44px 44px,
+    rgba(0, 0, 0, 0.1) 45px 45px,
+    rgba(0, 0, 0, 0.1) 46px 46px,
+    rgba(0, 0, 0, 0.1) 47px 47px,
+    rgba(0, 0, 0, 0.1) 48px 48px,
+    rgba(0, 0, 0, 0.1) 49px 49px,
+    rgba(0, 0, 0, 0.1) 50px 50px,
+    rgba(0, 0, 0, 0.1) 51px 51px,
+    rgba(0, 0, 0, 0.1) 52px 52px,
+    rgba(0, 0, 0, 0.1) 53px 53px,
+    rgba(0, 0, 0, 0.1) 54px 54px,
+    rgba(0, 0, 0, 0.1) 55px 55px,
+    rgba(0, 0, 0, 0.1) 56px 56px,
+    rgba(0, 0, 0, 0.1) 57px 57px,
+    rgba(0, 0, 0, 0.1) 58px 58px,
+    rgba(0, 0, 0, 0.1) 59px 59px,
+    rgba(0, 0, 0, 0.1) 60px 60px;
+    /*box-shadow: 2px 2px 2px #555;*/
 }
 .last {
     background-color: #333;
@@ -56,6 +115,15 @@ a {
     padding: 48px 0px 256px 0px;
     margin: -8px;
 }
-.box:not(.last) {
-    margin: 48px 20% 48px 20%;
+@media screen and (min-width: 1025px) {
+    .box:not(.last) {
+        margin: 48px 20% 48px 20%;
+        border-radius: 18px;
+    }
+}
+@media screen and (max-width: 1025px) {
+    .box:not(.last) {
+        margin: 48px 10% 48px 10%;
+        border-radius: 18px;
+    }
 }
