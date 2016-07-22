@@ -46,6 +46,7 @@ a {
     position: relative;
     top: 256px;
     box-shadow: 2px 2px 2px #555;
+    border-radius: 18px;
 }
 .last {
     background-color: #333;
@@ -57,12 +58,4 @@ a {
 }
 .box:not(.last) {
     margin: 48px 20% 48px 20%;
-}
-@media screen and (max-width: 1147px) {
-    #nave a:nth-child(1) {
-        display: none;
-    }
-    #nave a:last-child {
-        display: none;
-    }
 }
